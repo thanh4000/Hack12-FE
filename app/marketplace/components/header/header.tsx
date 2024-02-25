@@ -3,7 +3,8 @@ import "./header.css"
 import Display from "./images/darkDisplay.svg"
 import lmDisplay from "./images/lightDisplay.svg"
 import Notifications from "./images/Notifications.svg"
-import Avatar from "./images/Avatar.svg"
+// import Avatar from "./images/Avatar.svg"
+import Avatar from "./images/CHIPZ_1803.png"
 
 import {
     WalletDisconnectButton,
@@ -41,8 +42,8 @@ const Header = ({displayMode, setDisplayMode}: {displayMode: string, setDisplayM
             <div className="img--container">
                 <Image onClick={handleClick} src={displayIcon} alt="display"/>
                 <Image src={Notifications} alt="notifs"/>
-                <Image src={Avatar} alt="user"/>
-                <WalletMultiButton />
+                <Image src={Avatar} className="avatar--img" alt="user"/>
+                <WalletMultiButton className="wallet-adapter-dropdown-btn" />
                 <WalletDisconnectButton />
             </div>
         </header>

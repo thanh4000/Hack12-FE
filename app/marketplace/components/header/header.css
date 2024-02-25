@@ -26,7 +26,18 @@
     padding: .625rem;
 }
 
-.img--container {
+.img--container {   
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 1rem;
+}
+
+.avatar--img {
+    border-radius: 32px;
+    width: 48px;
+}
+
+.wallet-adapter-dropdown-btn {
+    display: flex !important;
 }

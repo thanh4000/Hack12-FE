@@ -11,6 +11,9 @@ import selectedBid from "./images/selectedBid.svg"
 import selectedCollection from "./images/selectedCollection.svg"
 import selectedProfile from "./images/selectedProfile.svg"
 
+import selectedCreate from "./images/selectedCreate.svg"
+import Create from "./images/Create.svg"
+
 import Image from "next/image"
 
 const Sidebar = ({selectedComponent, changeComponent, displayMode}: {selectedComponent: string, changeComponent: Function, displayMode: string}) => {
@@ -37,6 +40,7 @@ const Sidebar = ({selectedComponent, changeComponent, displayMode}: {selectedCom
                     <Image onClick={()=>handleClick('Dashboard')} src={selectedComponent==='Dashboard' ? selectedDashboard : Dashboard} alt="icon"/>
                     <Image onClick={()=>handleClick('Bid')} src={selectedComponent==='Bid' ? selectedBid : Bid} alt="icon"/>
                     <Image onClick={()=>handleClick('Collection')} src={selectedComponent==='Collection' ? selectedCollection : Collection} alt="icon"/>
+                    <Image onClick={()=>handleClick('Create')} src={selectedComponent==='Create' ? selectedCreate : Create} alt="icon"/>
                     <Image onClick={()=>handleClick('Profile')} src={selectedComponent==='Profile' ? selectedProfile : Profile} alt="icon"/>
                     <Image onClick={()=>handleClick('Settings')} src={Settings} alt="icon"/>
                 </div>

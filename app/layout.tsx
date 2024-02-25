@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Solana Marketplace',
-  description: 'Created by LeClair.eth',
+  // description: 'Created by LeClair.eth',
 }
 
 export default function RootLayout({

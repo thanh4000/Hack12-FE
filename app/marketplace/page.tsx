@@ -9,9 +9,9 @@ import Collection from "./components/collection/collection"
 import Profile from "./components/profile/profile"
 import Settings from "./components/settings/settings"
 
-
 import { useState, useEffect } from 'react';
 import { NextPage } from "next"
+import Create from "./components/createProposal/create"
 
 type nftData = any[] | null
 
@@ -62,6 +62,13 @@ const Marketplace: NextPage = () => {
                 />}
                 {selectedComponent === 'Collection' && <Collection 
                     displayMode={displayMode}
+                />}
+                 {selectedComponent === 'Collection' && <Collection 
+                    displayMode={displayMode}
+                />}
+                {selectedComponent === 'Create' && <Create 
+                    displayMode={displayMode}
+                    data={data}
                 />}
                 {selectedComponent === 'Profile' && <Profile 
                     displayMode={displayMode}

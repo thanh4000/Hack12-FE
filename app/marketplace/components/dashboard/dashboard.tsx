@@ -23,6 +23,8 @@ const Dashboard = ({displayMode, data}: {displayMode: string, data: nftData}) =>
         discTitleClass = "disc--title-lm"
     }
 
+    // console.log(data)
+
     return(
         <main className={contContainerClass}>
             <div className="discover--container">
@@ -74,6 +76,7 @@ const Dashboard = ({displayMode, data}: {displayMode: string, data: nftData}) =>
                     <div className="selector--item">Music</div>
                 </div>
             </div>
+        
             <Trending
                 displayMode={displayMode}
                 data={data}
