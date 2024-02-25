@@ -10,6 +10,7 @@ import {
 import { clusterApiUrl } from '@solana/web3.js';
 import Marketplace from './marketplace/page';
 import { BrowserRouter } from 'react-router-dom'
+import { Toaster } from './marketplace/components/sonner';
 
 // Default styles that can be overridden by your app
 require('@solana/wallet-adapter-react-ui/styles.css');
@@ -47,6 +48,8 @@ const Wallet: FC = () => {
             <WalletProvider wallets={wallets} autoConnect>
                 <WalletModalProvider>
                     <Marketplace />
+      <Toaster />
+
                 </WalletModalProvider>
             </WalletProvider>
         </ConnectionProvider>
