@@ -68,10 +68,10 @@ const Create = ({ displayMode, data }: { displayMode: string, data?: nftData }) 
                                 data &&
                                 <CardInfo
                                     displayMode={displayMode}
-                                    key={data[0].id}
-                                    title={data[0].name}
-                                    image={data[0].image}
-                                    floor_price={data[0].floorPrice}
+                                    key={data[1].id}
+                                    title={data[1].name}
+                                    image={data[1].image}
+                                    floor_price={data[1].floorPrice}
                                 />
                             }
 

@@ -30,7 +30,7 @@ const Dashboard = ({displayMode, data}: {displayMode: string, data: nftData}) =>
             <div className="discover--container">
                 <div id="explore" className="discover">
                     <div className={discTitleClass}>
-                        Discover, Collect, Sell, and Rent NFT
+                        Discover, Collect, Sell, and HODL NFT
                     </div>
                     <div id="desc">
                         Digital marketplace for crypto NFT HODLer 
@@ -52,7 +52,7 @@ const Dashboard = ({displayMode, data}: {displayMode: string, data: nftData}) =>
                         <div className="ft--auction">
                             <div>Auction time</div>
                             <div id="current-bid">
-                                <div>Current Bid</div>
+                                <div>Current HODL</div>
                                 <div>:</div>
                                 <div id="bid">1.50 SOL</div>
                             </div>
@@ -69,7 +69,7 @@ const Dashboard = ({displayMode, data}: {displayMode: string, data: nftData}) =>
                 </div>
             </div>
             <div className="label">
-                <div>Trending Bids</div>
+                <div>Trending HODL</div>
                 <div id="selector">
                     <div id="selected" className="selector--item">All</div>
                     <div className="selector--item">Artwork</div>

@@ -42,7 +42,7 @@ const Card = ({
             </div>
             <button id="bid--button"
             onClick={() => console.log("Bid")}
-            >Place a Bid</button>
+            >Place a proposal</button>
         </div>
     )
 }
