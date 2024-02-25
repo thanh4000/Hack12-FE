@@ -30,10 +30,10 @@ const Dashboard = ({displayMode, data}: {displayMode: string, data: nftData}) =>
             <div className="discover--container">
                 <div id="explore" className="discover">
                     <div className={discTitleClass}>
-                        Discover, Collect, Sell, and Create your NFT
+                        Discover, Collect, Sell, and Rent NFT
                     </div>
                     <div id="desc">
-                        Digital marketplace for crypto collectibles and non-fungible tokens
+                        Digital marketplace for crypto NFT HODLer 
                     </div>
                     <div className="button--container">
                         <button id="discover">Explore</button>

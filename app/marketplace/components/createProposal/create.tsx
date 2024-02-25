@@ -8,6 +8,7 @@ import img from "../../../../public/img-03.jpg"
 
 
 import CardInfo from "../CardInfo/CardInfo"
+import { toast } from "sonner";
 
 
 import "./create.css";
@@ -125,7 +126,10 @@ const Create = ({ displayMode, data }: { displayMode: string, data?: nftData }) 
                                         ></textarea>
                                     </div> */}
 
-                                    <button className="create--btn" onClick={}>Create Proposal</button>
+                                    <button className="create--btn" onClick={
+  () =>  toast.success("Transaction submitted.")
+
+                                    }>Create Proposal</button>
                                 </form>
                             </div>
                         </Col>
